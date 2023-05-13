@@ -12,7 +12,7 @@ jobs: # we now have TWO jobs, so that a workflow
       - run: echo "A first hello" # This prints "A first hello" to stdout.
       - run: sleep 25 # a command telling the job to "sleep" for 25 seconds.
 two:
-  docker: # it runs inside a docker image, the same as above.
+  docker:
     - image: cimg/ruby:3.0.2
       auth:
         username: mydockerhub-user
