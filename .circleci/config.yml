@@ -13,8 +13,8 @@ jobs: # we now have TWO jobs, so that a workflow
       - run: sleep 25 # a command telling the job to "sleep" for 25 seconds.
   two:
     docker:
-     - image: cimg/ruby:3.0.2
-       auth:
+      - image: cimg/ruby:3.0.2
+        auth:
          username: mydockerhub-user
          password: $DOCKERHUB_PASSWORD reference
     steps:
