@@ -2,7 +2,7 @@ version: 2
 jobs: # we now have TWO jobs, so that a workflow 
   one: # This is our first job.
     docker:  it uses the docker executor 
-      - image: cimg/ruby:2.6.8 # specifically, a docker image with ruby 2.6.8
+      - image: cimg/ruby:2.6.8 
         auth:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD # context / project UI env-var reference
